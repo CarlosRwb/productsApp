@@ -1,0 +1,173 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none; }
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.7;
+  padding: 15px;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(2, 2, 2, .8),
+    rgb(2, 2, 2, .8)),
+    url(../img/market.jpg);
+  background-size: cover;
+  background-position: top;
+  border-radius: 20px;
+
+}
+
+.header {
+  height: 10vh;
+  text-align: center;
+  padding: 10px 0 0 0;
+  animation: titleDown 1s ease-out;
+}
+
+.titulo {
+  font-size: 23px;
+  color: #fff;
+  padding: 15px 5px 5px 5px;
+  text-decoration: none;
+  font-weight: bolder;
+  letter-spacing: 1.3px
+}
+
+.container-card {
+  margin: 20px 30px 20px 30px;
+  animation: cardAll 1s ease-out .5s;
+  animation-fill-mode: backwards;
+}
+
+.header-card {
+  padding: 5px 0 5px 0;
+  border-bottom: .5px solid #fff;
+  border-top: .5px solid #fff;
+  border-left: .5px solid #fff;
+  border-right: .5px solid #fff;
+  border-radius: 30px 30px 0 0;
+  text-align: center;
+}
+
+.titulo-card {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px
+}
+
+.body-card {
+  height: 35vh;
+  border: 0.5px solid #fff;
+  border-radius: 0 0 30px 30px;
+  position: relative;
+  text-align: center;
+}
+
+.product-input {
+  display: block;
+  width: 80%;
+  height: 25px;
+  border-radius: 25px;
+  border: 0px solid white;
+  outline: none;
+  background-color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  color: black;
+  margin: 20px auto 10px auto;
+  text-align: center;
+}
+
+
+
+/* ANIMACIONESSSSSS */
+
+@keyframes titleDown {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  80% {
+    transform: translateY(6px);
+
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes cardAll {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes btn-top {
+  0% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  80% {
+    transform: translateY(-4px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.btn-card:link,
+.btn-card:visited {
+  display: inline-block;
+  transition: all .5s;
+  animation: btn-top .5s ease-out 1s;
+  animation-fill-mode: backwards;
+  border-radius: 50px;
+  margin-top: 5px;
+}
+
+.btn-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 2px 10px white;
+}
+
+.btn-card:active {
+  transform: translateY(-2px);
+  box-shadow: 0 .5px 8px white;
+}
+
+.btn-input {
+  /* background: rgba(255,255,255); */
+  border: 0px solid white;
+  padding: 15px 35px;
+  display: inline-block;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 700;
+}

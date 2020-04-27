@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Product app</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+      <div class="container">
+
+      <!--HEADER  -->
+
+        <header class="header">
+          <h1 class="titulo">
+            <a href="#" class="titulo">Aplicacion de productos</a>
+          </h1>
+        </header>
+
+          <!-- App Body -->
+
+          <div class="container-body">
+
+          <!-- Header del formulario -->
+
+          <div class="container-card">
+            <div class="header-card">
+              <h2 class="titulo-card">Añade un producto</h2>
+            </div>
+
+          <!-- Body del Formulario -->
+            <div class="body-card">
+              <form id="product-form">
+                <input class="product-input" type="text"  id="name" placeholder="Nombre del producto">
+                <input class="product-input" type="number" step="0.01" id="price" placeholder="Precio del producto">
+                <input class="product-input" type="number"   id="year" placeholder="Año de fabricacion">
+
+          <!-- Boton del formulario -->
+
+                <a href="#" class="btn-card">
+                  <input type="submit" value="Inserte aquí" class="btn-input">
+                </a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lista de objetos agregados a la lista -->
+
+      <div class="list-container">
+        <div id="product-list"></div>
+      </div>
+
+
+
+
+
+
+
+    <script src="/js/app.js"></script>
+  </body>
+</html>
